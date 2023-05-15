@@ -9,7 +9,7 @@
 int number = new Random().Next(100, 1000); // 100, 999+1
 Console.WriteLine ($"Случайное трёхзначное число -> {number}");
 int newNumber = DeleteSecondDigit(number);
-Console.WriteLine ($"{number} -> {newNumber}.");
+Console.WriteLine ($"Это же число без втрой цифры -> {newNumber}.");
 int DeleteSecondDigit (int num)
 {
     int firstDigit = num / 100;
