@@ -3,19 +3,14 @@
 // возможных координат точек в этой четверти (x и y).
 
 Console.WriteLine("Введите номер четверти:");
-int numQuarter = Convert.ToInt32(Console.ReadLine());
-
+string numQuarter = Console.ReadLine();
 string rangi = Rangi(numQuarter);
-string result = rangi != null 
-                            ? $"Заданный номер четверти содержит диапазон координат -> {rangi}."
-                            : "Четверти с заданным номером не существует.";
-
-Console.WriteLine(result);
-string Rangi(int num)
+Console.WriteLine(rangi == null ? "Некорректный ввод." : rangi);
+string Rangi(string num)
 {
-    if (num == 1) return "x > 0 && y > 0";
-    if (num == 2) return "x < 0 && y > 0";
-    if (num == 3) return "x < 0 && y < 0";
-    if (num == 4) return "x > 0 && y < 0";
+    if (num == "1" || num == "один") return "x > 0 && y > 0";
+    if (num == "2" || num == "два") return "x < 0 && y > 0";
+    if (num == "3" || num == "три") return "x < 0 && y < 0";
+    if (num == "4" || num == "четыре") return "x > 0 && y < 0";
     return null;
 }
