@@ -13,8 +13,10 @@ int minDigitArray = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите максимальное значение для элементов массива: ");
 int maxDigitArray = Convert.ToInt32(Console.ReadLine());
 
-Console.Write("[");
+// Console.Write("[");
 int[] createArray = CreateArray(sizeArray);
+PrintArray(createArray);
+Console.Write(" -> [");
 PrintArray(createArray);
 Console.Write("]");
 
