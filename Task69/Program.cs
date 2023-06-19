@@ -11,17 +11,13 @@ int exponenta = Exponenta(numberA, numberB);
 Console.WriteLine($"Число {numberA} в степени {numberB} -> {exponenta}");
 
 
-int Exponenta(int a, int b)
-{
-    if (b == 0) return 1;
-    return a * Exponenta(a, b - 1);
-}
-
-
-// int FactorialRec(int n)
+// int Exponenta(int a, int b)
 // {
-// if (n == 1) return 1;
-// return n * FactorialRec(n - 1);
+//     if (b == 0) return 1;
+//     return a * Exponenta(a, b - 1);
 // }
 
-// Console.WriteLine(FactorialRec(10)); // 3628800
+int Exponenta(int a, int b)
+{
+    return b == 0 ? 1 :  a * Exponenta(a, b - 1);
+}
