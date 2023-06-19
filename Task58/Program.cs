@@ -68,7 +68,6 @@ int[,] MultiplicationMatrix(int[,] matrix1, int[,] matrix2)
                 resultMatrix[i, j] += matrix1[i, n] * matrix2[n, j];
             }
         }
-
     }
     return resultMatrix;
 }
