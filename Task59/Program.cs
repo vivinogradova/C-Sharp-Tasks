@@ -94,3 +94,5 @@ int[,] DeleteRowsColumsMinElement(int[,] matrix, int rows, int colums)
     }
     return newMatrix;
 }
+
+
